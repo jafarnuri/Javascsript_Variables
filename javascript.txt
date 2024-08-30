@@ -1,0 +1,20 @@
+Javascript nədir?
+ JavaScript brauzerdə işləyən bir proqramlaşdırma dilidir. İşləmə məntiqi sinxrondur və single thread məntiqinə əsaslanır. JavaScript vasitəsilə web səhifəmizə dinamiklik verə bilərik və DOM-da manipulyasiya edə bilərik. Həmçinin backend-dən gələn məlumatları qəbul edib UI tərəfində göstərə bilərik.
+Javascript browserde nələri edə bilir nələri yox ?
+ JavaScript vasitəsilə biz DOM-da manipulyasiya edə bilərik (HTML və CSS elementlərini dəyişmək mümkündür). HTTP istəkləri göndərmək, local storage və session storage-də məlumatları saxlamaq mümkündür. Dilin özünə uyğun web API-lərdən istifadə edərək müxtəlif əməliyyatlar icra etmək olar. Edə bilməyəcəyimiz şeylər isə əsasən, eyni anda müxtəlif əməliyyatları həyata keçirməkdir, çünki yuxarıda da qeyd etdiyim kimi, JavaScript single thread məntiqinə əsaslanır. Digər edə bilməyəcəyimiz şeylər isə fayl sisteminə daxil olmaq, cihazın ayarlarına birbaşa daxil olmaq, istifadəçinin məlumatlarını götürmək və s.
+Javascriptde variables ?
+ JavaScript-də dəyişənlər (variable) stringlər, nömrələr (numbers), obyektlər, arrey (array) və funksiyaları tanımlamaq üçün istifadə edilir. Əsas dəyişənlər var, const və letdir. ES2015-dən sonra let və const istifadəyə verildi, amma arxa planda bunlar hamısı var çevrilir. Variables types ?
+ Dəyişənlərin tiplərinə gəldikdə isə, onlar iki yerə bölünürlər: referans və primitiv. Primitiv tiplərə string, number, boolean, null, undefined, simvollar və bigintlər daxildir. Referans tiplər isə obyektlər, array və funksiyalardır. Adından da göründüyü kimi, referans tiplər yaddaşdakı bir yeri referans edir. 
+Type çevrilmə ?
+ Əməliyyata əsaslanan çevrilmə, proqramçının müəyyən etdiyi qaydalar əsasında bir tipin başqa tipə çevrilməsidir. Bu, JavaScript-də xüsusi funksiyalar və metodlar vasitəsilə həyata keçirilir.
+Stringə çevrilmə:
+let num = 123;
+let str = String(num); 
+Numbere çevrilmə:
+let str = "456";
+let num = Number(str); 
+Booleana çevrilmə:
+let value = 1;
+let boolValue = Boolean(value);
+Primitiv vs Referans (Stack ve Heap nədir? Ferqi nədir, Ram nədir?).Niyə Rama ehtiyaçəməz var.
+ Stack və heap isə bir növ yaddaş kimi istifadə olunur, dəyişənləri saxlamaq üçün. Bu brauzerin daxilində baş verir və bizim burada xaricdən müdaxilə etmək şansımız yoxdur. Dəyişənlər daxil olduqda, brauzer müəyyən edir ki, bu stack-da saxlanacaq yoxsa heap-də. Heap, stack-a baxdıqda daha genişdir. Stack qısa ömürlü və yaddaşı kiçik olan əməliyyatlar üçündür, heap isə daha qarmaqarışıq və dinamik məlumatları özündə saxlayır. Sürət baxımından stack heap-dən daha sürətlidir. Bu iki yaddaş idarəedicisi JavaScript-də performans və yaddaş idarəsi üçün çox vacibdir.
